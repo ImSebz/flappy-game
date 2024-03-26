@@ -1,0 +1,54 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #dedede;
+}
+
+#board {
+    background-image: url("../img/flappybirdbg.png");
+}
+
+.menu-container{
+    display: flex;
+    width: 25%;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+
+    background-color: black;
+} 
+
+#startMenu {
+    color: white;
+    width: 100%;
+    margin-top: 75%;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 10%;
+    width: 50%;
+}
+
+#startMenu, #startButton {
+    text-align: center;
+}
+
+#btnVolver {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 2%;
+    width: 150px;
+}
+
+
+@media (min-width: 900px) {
+    .menu-container {
+        width: 100%;/* make it take up 50% of the screen width on large screens */
+    }
+
+    .board {
+        width: 100% !important;
+    }
+}
